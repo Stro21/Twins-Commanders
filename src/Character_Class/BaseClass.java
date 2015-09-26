@@ -2,8 +2,13 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package Character_Class;
 
+import Stats.BaseIncreaseStats;
+import Stats.BaseStats;
+import Race.*;
+import Alignment.Alignment;
 /**
  *
  * @author eduardo
@@ -11,17 +16,13 @@ package Character_Class;
 public class BaseClass extends BaseRace{
     private String name;
     private String description;
-    private int hp;
-    private int strength;
-    private int magic;
-    private int physical_defense;
-    private int magical_defense;
-    
+    private BaseIncreaseStats stats_increase;
+    private BaseStats minumunStats;
     private SexSpecific sex;
     private boolean can_lead;
-
+    private BaseRace race_class;
+    private Alignment alignment;
     
-
     /**
      * @return the sex
      */
@@ -49,6 +50,64 @@ public class BaseClass extends BaseRace{
     public void setCan_lead(boolean can_lead) {
         this.can_lead = can_lead;
     }
+
+    /**
+     * @return the stats_increase
+     */
+    public BaseIncreaseStats getStats_increase() {
+        return stats_increase;
+    }
+
+    /**
+     * @param stats_increase the stats_increase to set
+     */
+    public void setStats_increase(BaseIncreaseStats stats_increase) {
+        this.stats_increase = stats_increase;
+    }
+
+    /**
+     * @return the minumunStats
+     */
+    public BaseStats getMinumunStats() {
+        return minumunStats;
+    }
+
+    /**
+     * @param minumunStats the minumunStats to set
+     */
+    public void setMinumunStats(BaseStats minumunStats) {
+        this.minumunStats = minumunStats;
+    }
+
+    /**
+     * @return the race_class
+     */
+    public BaseRace getRace_class() {
+        return race_class;
+    }
+
+    /**
+     * @param race_class the race_class to set
+     */
+    public void setRace_class(BaseRace race_class) {
+        this.race_class = race_class;
+    }
+
+    /**
+     * @return the alignment
+     */
+    public Alignment getAlignment() {
+        return alignment;
+    }
+
+    /**
+     * @param alignment the alignment to set
+     */
+    public void setAlignment(Alignment alignment) {
+        this.alignment = alignment;
+    }
+
+
     
     public enum SexSpecific{
         MALE,
@@ -73,6 +132,7 @@ public class BaseClass extends BaseRace{
     /**
      * @return the description
      */
+    @Override
     public String getDescription() {
         return description;
     }
@@ -80,77 +140,8 @@ public class BaseClass extends BaseRace{
     /**
      * @param description the description to set
      */
+    @Override
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    /**
-     * @return the hp
-     */
-    public int getHp() {
-        return hp;
-    }
-
-    /**
-     * @param hp the hp to set
-     */
-    public void setHp(int hp) {
-        this.hp = hp;
-    }
-
-    /**
-     * @return the strength
-     */
-    public int getStrength() {
-        return strength;
-    }
-
-    /**
-     * @param strength the strength to set
-     */
-    public void setStrength(int strength) {
-        this.strength = strength;
-    }
-
-    /**
-     * @return the magic
-     */
-    public int getMagic() {
-        return magic;
-    }
-
-    /**
-     * @param magic the magic to set
-     */
-    public void setMagic(int magic) {
-        this.magic = magic;
-    }
-
-    /**
-     * @return the physical_defense
-     */
-    public int getPhysical_defense() {
-        return physical_defense;
-    }
-
-    /**
-     * @param physical_defense the physical_defense to set
-     */
-    public void setPhysical_defense(int physical_defense) {
-        this.physical_defense = physical_defense;
-    }
-
-    /**
-     * @return the magical_defense
-     */
-    public int getMagical_defense() {
-        return magical_defense;
-    }
-
-    /**
-     * @param magical_defense the magical_defense to set
-     */
-    public void setMagical_defense(int magical_defense) {
-        this.magical_defense = magical_defense;
     }
 }

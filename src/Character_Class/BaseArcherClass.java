@@ -4,6 +4,8 @@
  */
 package Character_Class;
 
+import Stats.*;
+import Race.*;
 /**
  *
  * @author Eduardo Straub
@@ -12,15 +14,14 @@ public class BaseArcherClass extends BaseClass{
     public BaseArcherClass(){
         setName("Archer");
         setDescription("Basic ranged unit");
-        setHp(30);
-        setStrength(15);
-        setMagic(15);
-        setPhysical_defense(5);
-        setMagical_defense(10);
-        setRace(Race.HUMAN);
+        BaseStats min = new BaseStats(0, 0, 0, 0, 0);
+        setMinumunStats(min);
+        BaseIncreaseStats stats = new BaseIncreaseStats(1, 1, 3, 1, 3);
+        setStats_increase(stats);
+        BaseRace race = new HumanRace();
+        setRace_class(race);
         setSex(SexSpecific.UNISEX);
         setCan_lead(false);
-        setRace_description("Humans are the are most populated inteligent species.");
-        setSize(1);
+        
     }
 }

@@ -1,19 +1,42 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Items;
+package Stats;
 
 /**
  *
- * @author Eduardo Straub
+ * @author eduardo
  */
-public class BaseStatItem extends BaseItem {
-
+public class BaseStats {
+    private int hp;
     private int strength;
     private int magic;
     private int physical_defense;
     private int magical_defense;
+
+    public BaseStats(int hp, int strength, int magic, int physical_defense, int magical_defense) {
+        this.hp = hp;
+        this.strength = strength;
+        this.magic = magic;
+        this.physical_defense = physical_defense;
+        this.magical_defense = magical_defense;
+    }
+    
+    /**
+     * @return the hp
+     */
+    public int getHp() {
+        return hp;
+    }
+
+    /**
+     * @param hp the hp to set
+     */
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
 
     /**
      * @return the strength
@@ -60,14 +83,14 @@ public class BaseStatItem extends BaseItem {
     /**
      * @return the magical_defense
      */
-    public int getMagical_defence() {
+    public int getMagical_defense() {
         return magical_defense;
     }
 
     /**
      * @param magical_defense the magical_defense to set
      */
-    public void setMagical_defence(int magical_defense) {
+    public void setMagical_defense(int magical_defense) {
         this.magical_defense = magical_defense;
     }
 }

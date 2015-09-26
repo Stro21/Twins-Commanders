@@ -4,6 +4,10 @@
  */
 package Character_Class;
 
+
+import Stats.BaseStats;
+import Race.*;
+import Stats.BaseIncreaseStats;
 /**
  *
  * @author Eduardo Straub
@@ -12,15 +16,13 @@ public class BaseFighterClass extends BaseClass{
     public BaseFighterClass(){
         setName("Fighter");
         setDescription("The basic melee unit");
-        setHp(40);
-        setStrength(20);
-        setMagic(10);
-        setPhysical_defense(10);
-        setMagical_defense(5);
-        setRace(Race.HUMAN);
+        BaseStats min = new BaseStats(0, 0, 0, 0, 0);
+        setMinumunStats(min);
+        BaseIncreaseStats stats = new BaseIncreaseStats(3, 3, 1, 3, 1);
+        setStats_increase(stats);
+        BaseRace race = new HumanRace();
+        setRace_class(race);
         setSex(SexSpecific.UNISEX);
         setCan_lead(false);
-        setRace_description("Humans are the are most populated inteligent species.");
-        setSize(1);
     }
 }
