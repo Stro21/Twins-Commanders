@@ -15,6 +15,7 @@ public class BaseRace {
     private int size;
     private double block_size;
     private double block_extra_size;
+    private boolean can_fly_or_float;
 
     /**
      * @return the race
@@ -84,5 +85,19 @@ public class BaseRace {
      */
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    /**
+     * @return the can_fly_or_float
+     */
+    public boolean isCan_fly_or_float() {
+        return can_fly_or_float;
+    }
+
+    /**
+     * @param can_fly_or_float the can_fly_or_float to set
+     */
+    public void setCan_fly_or_float(boolean can_fly_or_float) {
+        this.can_fly_or_float = can_fly_or_float;
     }
 }

@@ -23,5 +23,7 @@ public class BaseTrainerClass extends BaseClass{
         setStats_increase(stats);
         setSex(SexSpecific.UNISEX);
         setCan_lead(false);
+        setPrevious_class(null);
+        setCan_lead_a_legion(false);
     }
 }

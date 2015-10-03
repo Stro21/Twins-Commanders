@@ -22,6 +22,7 @@ public class BaseArcherClass extends BaseClass{
         setRace_class(race);
         setSex(SexSpecific.UNISEX);
         setCan_lead(false);
-        
+        setPrevious_class(null);
+        setCan_lead_a_legion(false);
     }
 }

@@ -14,5 +14,6 @@ public enum Race{
         Dragon,
         Golem,
         Beast,
-        Demon
+        Demon,
+        Undead
 }

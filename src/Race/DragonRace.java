@@ -9,13 +9,14 @@ package Race;
  *
  * @author eduardo
  */
-public class HumanRace extends BaseRace{
-    public HumanRace(){
-        setRace(Race.Human);
-        setDescription("The most abundant intelligent race.");
-        setSize(1);
+public class DragonRace extends BaseRace{
+
+    public DragonRace() {
+        setRace(Race.Dragon);
+        setDescription("A powerful reptilian monster.");
+        setSize(2);
         setBlock_size(1);
-        setBlock_extra_size(0);
-        setCan_fly_or_float(false);
+        setBlock_extra_size(0.5);
+        setCan_fly_or_float(true);
     }
 }

@@ -22,6 +22,8 @@ public class BaseClass extends BaseRace{
     private boolean can_lead;
     private BaseRace race_class;
     private Alignment alignment;
+    private BaseClass previous_class;
+    private boolean can_lead_a_legion;
     
     /**
      * @return the sex
@@ -105,6 +107,34 @@ public class BaseClass extends BaseRace{
      */
     public void setAlignment(Alignment alignment) {
         this.alignment = alignment;
+    }
+
+    /**
+     * @return the previous_class
+     */
+    public BaseClass getPrevious_class() {
+        return previous_class;
+    }
+
+    /**
+     * @param previous_class the previous_class to set
+     */
+    public void setPrevious_class(BaseClass previous_class) {
+        this.previous_class = previous_class;
+    }
+
+    /**
+     * @return the can_lead_a_legion
+     */
+    public boolean isCan_lead_a_legion() {
+        return can_lead_a_legion;
+    }
+
+    /**
+     * @param can_lead_a_legion the can_lead_a_legion to set
+     */
+    public void setCan_lead_a_legion(boolean can_lead_a_legion) {
+        this.can_lead_a_legion = can_lead_a_legion;
     }
 
 

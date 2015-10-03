@@ -9,13 +9,13 @@ package Race;
  *
  * @author eduardo
  */
-public class HumanRace extends BaseRace{
-    public HumanRace(){
-        setRace(Race.Human);
-        setDescription("The most abundant intelligent race.");
+public class HawkmanRace extends BaseRace{
+    public HawkmanRace(){
+        setRace(Race.Hawkman);
+        setDescription("A man with hawk wings.");
         setSize(1);
         setBlock_size(1);
         setBlock_extra_size(0);
-        setCan_fly_or_float(false);
+        setCan_fly_or_float(true);
     }
 }
