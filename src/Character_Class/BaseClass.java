@@ -9,6 +9,8 @@ import Stats.BaseIncreaseStats;
 import Stats.BaseStats;
 import Race.*;
 import Alignment.Alignment;
+import Sex.*;
+
 /**
  *
  * @author eduardo
@@ -18,7 +20,7 @@ public class BaseClass extends BaseRace{
     private String description;
     private BaseIncreaseStats stats_increase;
     private BaseStats minumunStats;
-    private SexSpecific sex;
+    private Sex_Specific sex;
     private boolean can_lead;
     private BaseRace race_class;
     private Alignment alignment;
@@ -28,14 +30,14 @@ public class BaseClass extends BaseRace{
     /**
      * @return the sex
      */
-    public SexSpecific getSex() {
+    public Sex_Specific getSex() {
         return sex;
     }
 
     /**
      * @param sex the sex to set
      */
-    public void setSex(SexSpecific sex) {
+    public void setSex(Sex_Specific sex) {
         this.sex = sex;
     }
 
@@ -135,14 +137,6 @@ public class BaseClass extends BaseRace{
      */
     public void setCan_lead_a_legion(boolean can_lead_a_legion) {
         this.can_lead_a_legion = can_lead_a_legion;
-    }
-
-
-    
-    public enum SexSpecific{
-        MALE,
-        FEMALE,
-        UNISEX
     }
     
     /**

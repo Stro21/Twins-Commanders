@@ -8,6 +8,8 @@ package Character_Class;
 import Stats.BaseStats;
 import Race.*;
 import Stats.BaseIncreaseStats;
+import Sex.*;
+
 /**
  *
  * @author Eduardo Straub
@@ -22,7 +24,7 @@ public class BaseFighterClass extends BaseClass{
         setStats_increase(stats);
         BaseRace race = new HumanRace();
         setRace_class(race);
-        setSex(SexSpecific.UNISEX);
+        setSex(Sex_Specific.Unisex);
         setCan_lead(false);
         setPrevious_class(null);
         setCan_lead_a_legion(false);

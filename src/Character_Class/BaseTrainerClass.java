@@ -7,6 +7,7 @@ package Character_Class;
 import Stats.BaseStats;
 import Race.*;
 import Stats.BaseIncreaseStats;
+import Sex.*;
 /**
  *
  * @author Eduardo Straub
@@ -21,7 +22,7 @@ public class BaseTrainerClass extends BaseClass{
         setRace_class(race);
         BaseIncreaseStats stats = new BaseIncreaseStats(2, 2, 2, 2, 2);
         setStats_increase(stats);
-        setSex(SexSpecific.UNISEX);
+        setSex(Sex_Specific.Unisex);
         setCan_lead(false);
         setPrevious_class(null);
         setCan_lead_a_legion(false);

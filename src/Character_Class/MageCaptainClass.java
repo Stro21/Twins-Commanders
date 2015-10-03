@@ -9,6 +9,7 @@ import Race.BaseRace;
 import Race.HumanRace;
 import Stats.BaseIncreaseStats;
 import Stats.BaseStats;
+import Sex.*;
 
 /**
  *
@@ -25,7 +26,7 @@ public class MageCaptainClass extends BaseClass{
         setRace_class(race);
         BaseIncreaseStats stats = new BaseIncreaseStats(4, 2, 5, 2, 7);
         setStats_increase(stats);
-        setSex(BaseClass.SexSpecific.UNISEX);
+        setSex(Sex_Specific.Unisex);
         setCan_lead(true);
         setPrevious_class(null);
         setCan_lead_a_legion(false);
