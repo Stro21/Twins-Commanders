@@ -2,16 +2,18 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Items;
+package Equipment;
 
+import Items.*;
+import Stats.BaseStats;
 /**
  *
  * @author Eduardo Straub
  */
-public class BaseEquipment extends BaseStatItem {
+public class BaseEquipment extends BaseItem {
 
     private EquipmentTypes equipment_type;
-    private int spellEffectID;
+    private BaseStats stats;
 
     /**
      * @return the equipment_type
@@ -28,16 +30,16 @@ public class BaseEquipment extends BaseStatItem {
     }
 
     /**
-     * @return the spellEffectID
+     * @return the stats
      */
-    public int getSpellEffectID() {
-        return spellEffectID;
+    public BaseStats getStats() {
+        return stats;
     }
 
     /**
-     * @param spellEffectID the spellEffectID to set
+     * @param stats the stats to set
      */
-    public void setSpellEffectID(int spellEffectID) {
-        this.spellEffectID = spellEffectID;
+    public void setStats(BaseStats stats) {
+        this.stats = stats;
     }
 }

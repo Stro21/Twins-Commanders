@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Items;
+package Defense_Equipment;
 
 /**
  *
@@ -10,11 +10,11 @@ package Items;
  */
 public enum DefenseEquipmentTypes {
 
-    SHIELD,
-    BOOK,
-    HELM,
-    HAT,
-    LIGHT_ARMOR,
-    MEDIUM_ARMOR,
-    HEAVY_ARMOR
+    Shield,
+    Book,
+    Helm,
+    Hat,
+    Light_Armor,
+    Medium_Armor,
+    Heavy_Armor
 }

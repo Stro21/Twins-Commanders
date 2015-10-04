@@ -2,16 +2,19 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Items;
+package Weapons;
 
 /**
  *
  * @author Eduardo Straub
  */
-public enum EquipmentTypes {
+public enum WeaponTypes {
 
-    RIGHT_HAND,
-    LEFT_HAND,
-    BODY,
-    HEAD
+    Sword,
+    Bow,
+    Lance,
+    Staff,
+    Dagger,
+    Whip,
+    Axe
 }

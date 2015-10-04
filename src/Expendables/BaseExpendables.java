@@ -2,7 +2,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Items;
+package Expendables;
+
+import Items.BaseItem;
+import Items.BaseItem;
+import Expendables.ExpendablesTypes;
 
 /**
  *
@@ -11,7 +15,6 @@ package Items;
 public class BaseExpendables extends BaseItem {
 
     private ExpendablesTypes expendables_types;
-    private int spellEffectID;
 
     /**
      * @return the expendables_types
@@ -25,19 +28,5 @@ public class BaseExpendables extends BaseItem {
      */
     public void setExpendables_types(ExpendablesTypes expendables_types) {
         this.expendables_types = expendables_types;
-    }
-
-    /**
-     * @return the spellEffectID
-     */
-    public int getSpellEffectID() {
-        return spellEffectID;
-    }
-
-    /**
-     * @param spellEffectID the spellEffectID to set
-     */
-    public void setSpellEffectID(int spellEffectID) {
-        this.spellEffectID = spellEffectID;
     }
 }

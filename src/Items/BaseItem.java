@@ -14,7 +14,8 @@ public class BaseItem {
     private String description;
     private int itemID;
     private Item_Type item_Type;
-
+    private int spellEffectID;
+    
     /**
      * @return the name
      */
@@ -69,5 +70,19 @@ public class BaseItem {
      */
     public void setItem_Type(Item_Type item_Type) {
         this.item_Type = item_Type;
+    }
+
+    /**
+     * @return the spellEffectID
+     */
+    public int getSpellEffectID() {
+        return spellEffectID;
+    }
+
+    /**
+     * @param spellEffectID the spellEffectID to set
+     */
+    public void setSpellEffectID(int spellEffectID) {
+        this.spellEffectID = spellEffectID;
     }
 }

@@ -2,14 +2,15 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Items;
+package Expendables;
 
 /**
  *
  * @author Eduardo Straub
  */
-public enum AccesoriesTypes {
+public enum ExpendablesTypes {
 
-    NON_CLASS_SPECIFIC,
-    CLASS_SPECIFIC
+    Curatives,
+    Supplementals,
+    Others
 }

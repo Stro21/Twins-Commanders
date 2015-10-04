@@ -10,8 +10,8 @@ package Items;
  */
 public enum Item_Type {
 
-    EQUIMENT,
-    EXPENDABLES,
-    ACCESORIES,
-    VALUABLES
+    Equipment,
+    Expandables,
+    Accesories,
+    Valuables
 }

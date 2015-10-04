@@ -2,7 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Items;
+package Valuables;
+
+import Items.BaseItem;
+import Valuables.ValuablesTypes;
 
 /**
  *
@@ -11,7 +14,6 @@ package Items;
 public class BaseValuables extends BaseItem {
 
     private ValuablesTypes value_types;
-    private int spellEffectID;
 
     /**
      * @return the value_types
@@ -25,19 +27,5 @@ public class BaseValuables extends BaseItem {
      */
     public void setValue_types(ValuablesTypes value_types) {
         this.value_types = value_types;
-    }
-
-    /**
-     * @return the spellEffectID
-     */
-    public int getSpellEffectID() {
-        return spellEffectID;
-    }
-
-    /**
-     * @param spellEffectID the spellEffectID to set
-     */
-    public void setSpellEffectID(int spellEffectID) {
-        this.spellEffectID = spellEffectID;
     }
 }

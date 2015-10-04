@@ -10,6 +10,7 @@ import Stats.BaseStats;
 import Race.*;
 import Alignment.Alignment;
 import Sex.*;
+import Combat_Action.*;
 
 /**
  *
@@ -26,6 +27,7 @@ public class BaseClass extends BaseRace{
     private Alignment alignment;
     private BaseClass previous_class;
     private boolean can_lead_a_legion;
+    private BaseCombatAction action;
     
     /**
      * @return the sex
@@ -167,5 +169,19 @@ public class BaseClass extends BaseRace{
     @Override
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    /**
+     * @return the action
+     */
+    public BaseCombatAction getAction() {
+        return action;
+    }
+
+    /**
+     * @param action the action to set
+     */
+    public void setAction(BaseCombatAction action) {
+        this.action = action;
     }
 }

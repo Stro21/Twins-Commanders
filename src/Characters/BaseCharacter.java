@@ -10,6 +10,7 @@ import Element.Element;
 import Race.*;
 import Sex.*;
 import Stats.*;
+import Status.*;
 
 /**
  *
@@ -26,6 +27,7 @@ public class BaseCharacter {
     private BaseStats stats;
     private boolean is_hero;
     private boolean main_character;
+    private BaseStatus status;
 
     public void Level_Up(){
         stats.setHp(stats.getHp() + class_.getStats_increase().getHp_inc());
@@ -173,5 +175,19 @@ public class BaseCharacter {
      */
     public void setMain_character(boolean main_character) {
         this.main_character = main_character;
+    }
+
+    /**
+     * @return the status
+     */
+    public BaseStatus getStatus() {
+        return status;
+    }
+
+    /**
+     * @param status the status to set
+     */
+    public void setStatus(BaseStatus status) {
+        this.status = status;
     }
 }
