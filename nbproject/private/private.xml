@@ -3,14 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/eduar/Documents/GitHub/Twins%20Commanders/src/Character_Class/BaseTrainerClass.java</file>
-            <file>file:/C:/Users/eduar/Documents/GitHub/Twins%20Commanders/src/Sex/Sex.java</file>
-            <file>file:/C:/Users/eduar/Documents/GitHub/Twins%20Commanders/src/Character_Class/WarriorCaptainClass.java</file>
-            <file>file:/C:/Users/eduar/Documents/GitHub/Twins%20Commanders/src/Character_Class/MageCaptainClass.java</file>
-            <file>file:/C:/Users/eduar/Documents/GitHub/Twins%20Commanders/src/Sex/Sex_Specific.java</file>
-            <file>file:/C:/Users/eduar/Documents/GitHub/Twins%20Commanders/src/Character_Class/BaseArcherClass.java</file>
+            <file>file:/C:/Users/eduar/Documents/GitHub/Twins%20Commanders/src/Stats/BaseStats.java</file>
             <file>file:/C:/Users/eduar/Documents/GitHub/Twins%20Commanders/src/Character_Class/BaseClass.java</file>
-            <file>file:/C:/Users/eduar/Documents/GitHub/Twins%20Commanders/src/Character_Class/BaseFighterClass.java</file>
+            <file>file:/C:/Users/eduar/Documents/GitHub/Twins%20Commanders/src/Characters/BaseCharacter.java</file>
         </group>
     </open-files>
 </project-private>
