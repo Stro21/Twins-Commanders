@@ -33,6 +33,7 @@ public class BaseCharacter {
         stats.setMagical_defense(stats.getMagical_defense() + class_.getStats_increase().getMag_def_inc());
         stats.setStrength(stats.getStrength() + class_.getStats_increase().getStr_inc());
         stats.setPhysical_defense(stats.getPhysical_defense() + class_.getStats_increase().getPhy_def_inc());
+        level =+ 1;
     }
     /**
      * @return the name
